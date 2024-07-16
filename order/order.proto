@@ -3,11 +3,11 @@ option go_package="github.com/kwesilarbi/store-microservices/order";
 
 message CreateOrderRequest {
     int64 user_id = 1;
-    repeated Item items = 2;
+    repeated OrderItem order_items = 2;
     float total_price = 3;
 }
 
-message Item {
+message OrderItem {
     string name = 1;
 }
 
