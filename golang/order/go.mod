@@ -1,4 +1,4 @@
-module golang/order
+module github.com/kwesilarbi/store-proto/golang/order
 
 go 1.22.4
 
