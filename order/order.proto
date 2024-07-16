@@ -8,7 +8,10 @@ message CreateOrderRequest {
 }
 
 message OrderItem {
-    string name = 1;
+    string product_code = 1;
+    int32 quantity = 2;
+    float unit_price = 3;
+    string name = 4;
 }
 
 message CreateOrderResponse {
