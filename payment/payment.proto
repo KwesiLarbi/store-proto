@@ -2,8 +2,9 @@ syntax = "proto3";
 option go_package="github.com/kwesilarbi/store-microservices/payment";
 
 message CreatePaymentRequest {
-    float price = 1;
-    float vat = 2;
+    int64 user_id = 1;
+    int64 order_id = 2;
+    float total_price = 3;
 }
 
 message CreatePaymentResponse {
